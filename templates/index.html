@@ -1,0 +1,34 @@
+<!doctype html>
+<h3>Transcreva seu áudio para texto!</h3>
+<form method=post enctype=multipart/form-data>
+    <table>
+        <tr>
+            <td>Qual ferramenta de transcrição?</td>
+            <td>
+                <select name="api_type">
+                    <option value="google_web" selected disabled hidden>Escolha uma opção</option>
+                    <option value="google_web">Google WEB</option>
+                    <option value="google_cloud">Google Cloud (com IA)</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Resposta detalhada?</td>
+            <td>
+                <select name="show_all">
+                    <option value="google_web" selected disabled hidden>Escolha uma opção</option>
+                    <option value="True">Sim</option>
+                    <option value="False">Não</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Selecione o arquivo em .wax
+            </td>
+            <td><input type=file name=audio_file></td>
+        </tr>
+    </table>
+</br>
+    <input type=submit value=Upload>
+</form>

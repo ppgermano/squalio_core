@@ -18,7 +18,17 @@ pip install -r requirements
 PATH_AUTH_GOOGLE="path/to/google/credentials.json"
 ```
 
-## Rodando a aplicação - Windows
+## Rodando a aplicação
+
+### Windows
+
+```shell
+$ set FLASK_APP=main.py
+$ flask run
+ * Running on http://127.0.0.1:5000/
+```
+
+### Unix
 
 ```shell
 $ export FLASK_APP=main.py

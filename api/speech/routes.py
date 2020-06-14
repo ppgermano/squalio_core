@@ -13,7 +13,7 @@ def allowed_file(filename):
 	return '.' in filename and \
 		   filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-@speech.route('/speech-to-text', methods=['GET', 'POST'], strict_slashes=False)
+@speech.route('/squalio/speech-to-text', methods=['GET', 'POST'], strict_slashes=False)
 def upload_file():
 
 	default_options = {
